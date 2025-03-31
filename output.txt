@@ -1,0 +1,664 @@
+Compiling file: examples/factorial.py
+File content:
+========================================
+def factorial(n):
+    if n <= 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+def iterative_factorial(n):
+    result = 1
+    while n > 1:
+        result = result * n
+        n = n - 1
+    return result
+
+def main():
+    x = 5
+    
+    rec_result = factorial(x)
+    iter_result = iterative_factorial(x)
+    
+    if rec_result == iter_result:
+        return rec_result
+    else:
+        return 0
+
+========================================
+
+=== TOKENS ===
+KEYWORD      'def' (line 1, col 0)
+IDENTIFIER   'factorial' (line 1, col 4)
+PUNCTUATION  '(' (line 1, col 13)
+IDENTIFIER   'n' (line 1, col 14)
+PUNCTUATION  ')' (line 1, col 15)
+PUNCTUATION  ':' (line 1, col 16)
+NEWLINE      '
+' (line 1, col 17)
+INDENT       '' (line 2, col 0)
+KEYWORD      'if' (line 2, col 4)
+IDENTIFIER   'n' (line 2, col 7)
+OPERATOR     '<=' (line 2, col 9)
+INTEGER      '1' (line 2, col 12)
+PUNCTUATION  ':' (line 2, col 13)
+NEWLINE      '
+' (line 2, col 14)
+INDENT       '' (line 3, col 0)
+KEYWORD      'return' (line 3, col 8)
+INTEGER      '1' (line 3, col 15)
+NEWLINE      '
+' (line 3, col 16)
+DEDENT       '' (line 4, col 0)
+KEYWORD      'else' (line 4, col 4)
+PUNCTUATION  ':' (line 4, col 8)
+NEWLINE      '
+' (line 4, col 9)
+INDENT       '' (line 5, col 0)
+KEYWORD      'return' (line 5, col 8)
+IDENTIFIER   'n' (line 5, col 15)
+OPERATOR     '*' (line 5, col 17)
+IDENTIFIER   'factorial' (line 5, col 19)
+PUNCTUATION  '(' (line 5, col 28)
+IDENTIFIER   'n' (line 5, col 29)
+OPERATOR     '-' (line 5, col 31)
+INTEGER      '1' (line 5, col 33)
+PUNCTUATION  ')' (line 5, col 34)
+NEWLINE      '
+' (line 5, col 35)
+DEDENT       '' (line 7, col 0)
+DEDENT       '' (line 7, col 0)
+KEYWORD      'def' (line 7, col 0)
+IDENTIFIER   'iterative_factorial' (line 7, col 4)
+PUNCTUATION  '(' (line 7, col 23)
+IDENTIFIER   'n' (line 7, col 24)
+PUNCTUATION  ')' (line 7, col 25)
+PUNCTUATION  ':' (line 7, col 26)
+NEWLINE      '
+' (line 7, col 27)
+INDENT       '' (line 8, col 0)
+IDENTIFIER   'result' (line 8, col 4)
+OPERATOR     '=' (line 8, col 11)
+INTEGER      '1' (line 8, col 13)
+NEWLINE      '
+' (line 8, col 14)
+KEYWORD      'while' (line 9, col 4)
+IDENTIFIER   'n' (line 9, col 10)
+OPERATOR     '>' (line 9, col 12)
+INTEGER      '1' (line 9, col 14)
+PUNCTUATION  ':' (line 9, col 15)
+NEWLINE      '
+' (line 9, col 16)
+INDENT       '' (line 10, col 0)
+IDENTIFIER   'result' (line 10, col 8)
+OPERATOR     '=' (line 10, col 15)
+IDENTIFIER   'result' (line 10, col 17)
+OPERATOR     '*' (line 10, col 24)
+IDENTIFIER   'n' (line 10, col 26)
+NEWLINE      '
+' (line 10, col 27)
+IDENTIFIER   'n' (line 11, col 8)
+OPERATOR     '=' (line 11, col 10)
+IDENTIFIER   'n' (line 11, col 12)
+OPERATOR     '-' (line 11, col 14)
+INTEGER      '1' (line 11, col 16)
+NEWLINE      '
+' (line 11, col 17)
+DEDENT       '' (line 12, col 0)
+KEYWORD      'return' (line 12, col 4)
+IDENTIFIER   'result' (line 12, col 11)
+NEWLINE      '
+' (line 12, col 17)
+DEDENT       '' (line 14, col 0)
+KEYWORD      'def' (line 14, col 0)
+IDENTIFIER   'main' (line 14, col 4)
+PUNCTUATION  '(' (line 14, col 8)
+PUNCTUATION  ')' (line 14, col 9)
+PUNCTUATION  ':' (line 14, col 10)
+NEWLINE      '
+' (line 14, col 11)
+INDENT       '' (line 15, col 0)
+IDENTIFIER   'x' (line 15, col 4)
+OPERATOR     '=' (line 15, col 6)
+INTEGER      '5' (line 15, col 8)
+NEWLINE      '
+' (line 15, col 9)
+IDENTIFIER   'rec_result' (line 17, col 4)
+OPERATOR     '=' (line 17, col 15)
+IDENTIFIER   'factorial' (line 17, col 17)
+PUNCTUATION  '(' (line 17, col 26)
+IDENTIFIER   'x' (line 17, col 27)
+PUNCTUATION  ')' (line 17, col 28)
+NEWLINE      '
+' (line 17, col 29)
+IDENTIFIER   'iter_result' (line 18, col 4)
+OPERATOR     '=' (line 18, col 16)
+IDENTIFIER   'iterative_factorial' (line 18, col 18)
+PUNCTUATION  '(' (line 18, col 37)
+IDENTIFIER   'x' (line 18, col 38)
+PUNCTUATION  ')' (line 18, col 39)
+NEWLINE      '
+' (line 18, col 40)
+KEYWORD      'if' (line 20, col 4)
+IDENTIFIER   'rec_result' (line 20, col 7)
+OPERATOR     '==' (line 20, col 18)
+IDENTIFIER   'iter_result' (line 20, col 21)
+PUNCTUATION  ':' (line 20, col 32)
+NEWLINE      '
+' (line 20, col 33)
+INDENT       '' (line 21, col 0)
+KEYWORD      'return' (line 21, col 8)
+IDENTIFIER   'rec_result' (line 21, col 15)
+NEWLINE      '
+' (line 21, col 25)
+DEDENT       '' (line 22, col 0)
+KEYWORD      'else' (line 22, col 4)
+PUNCTUATION  ':' (line 22, col 8)
+NEWLINE      '
+' (line 22, col 9)
+INDENT       '' (line 23, col 0)
+KEYWORD      'return' (line 23, col 8)
+INTEGER      '0' (line 23, col 15)
+NEWLINE      '
+' (line 23, col 16)
+DEDENT       '' (line 24, col 0)
+DEDENT       '' (line 24, col 0)
+EOF          '' (line 24, col 0)
+
+=== AST ===
+Program(
+  body=[
+    FunctionDef(
+      name=factorial
+      params=['n']
+      body=[
+        If(
+          test=
+            Compare(
+              left=
+                Name(
+                  id=n
+                  ctx=Load
+                )
+              ops=['<=']
+              comparators=[
+                Constant(
+                  value=1
+                  kind=None
+                )
+              ]
+            )
+          body=[
+            Return(
+              value=
+                Constant(
+                  value=1
+                  kind=None
+                )
+            )
+          ]
+          orelse=[
+            Return(
+              value=
+                BinOp(
+                  left=
+                    Name(
+                      id=n
+                      ctx=Load
+                    )
+                  op=*
+                  right=
+                    Call(
+                      func=
+                        Name(
+                          id=factorial
+                          ctx=Load
+                        )
+                      args=[
+                        BinOp(
+                          left=
+                            Name(
+                              id=n
+                              ctx=Load
+                            )
+                          op=-
+                          right=
+                            Constant(
+                              value=1
+                              kind=None
+                            )
+                        )
+                      ]
+                      keywords={}
+                    )
+                )
+            )
+          ]
+        )
+      ]
+      decorators=[]
+      returns=None
+    )
+    FunctionDef(
+      name=iterative_factorial
+      params=['n']
+      body=[
+        Assign(
+          targets=[
+            Name(
+              id=result
+              ctx=Load
+            )
+          ]
+          value=
+            Constant(
+              value=1
+              kind=None
+            )
+        )
+        While(
+          test=
+            Compare(
+              left=
+                Name(
+                  id=n
+                  ctx=Load
+                )
+              ops=['>']
+              comparators=[
+                Constant(
+                  value=1
+                  kind=None
+                )
+              ]
+            )
+          body=[
+            Assign(
+              targets=[
+                Name(
+                  id=result
+                  ctx=Load
+                )
+              ]
+              value=
+                BinOp(
+                  left=
+                    Name(
+                      id=result
+                      ctx=Load
+                    )
+                  op=*
+                  right=
+                    Name(
+                      id=n
+                      ctx=Load
+                    )
+                )
+            )
+            Assign(
+              targets=[
+                Name(
+                  id=n
+                  ctx=Load
+                )
+              ]
+              value=
+                BinOp(
+                  left=
+                    Name(
+                      id=n
+                      ctx=Load
+                    )
+                  op=-
+                  right=
+                    Constant(
+                      value=1
+                      kind=None
+                    )
+                )
+            )
+          ]
+          orelse=[]
+        )
+        Return(
+          value=
+            Name(
+              id=result
+              ctx=Load
+            )
+        )
+      ]
+      decorators=[]
+      returns=None
+    )
+    FunctionDef(
+      name=main
+      params=[]
+      body=[
+        Assign(
+          targets=[
+            Name(
+              id=x
+              ctx=Load
+            )
+          ]
+          value=
+            Constant(
+              value=5
+              kind=None
+            )
+        )
+        Assign(
+          targets=[
+            Name(
+              id=rec_result
+              ctx=Load
+            )
+          ]
+          value=
+            Call(
+              func=
+                Name(
+                  id=factorial
+                  ctx=Load
+                )
+              args=[
+                Name(
+                  id=x
+                  ctx=Load
+                )
+              ]
+              keywords={}
+            )
+        )
+        Assign(
+          targets=[
+            Name(
+              id=iter_result
+              ctx=Load
+            )
+          ]
+          value=
+            Call(
+              func=
+                Name(
+                  id=iterative_factorial
+                  ctx=Load
+                )
+              args=[
+                Name(
+                  id=x
+                  ctx=Load
+                )
+              ]
+              keywords={}
+            )
+        )
+        If(
+          test=
+            Compare(
+              left=
+                Name(
+                  id=rec_result
+                  ctx=Load
+                )
+              ops=['==']
+              comparators=[
+                Name(
+                  id=iter_result
+                  ctx=Load
+                )
+              ]
+            )
+          body=[
+            Return(
+              value=
+                Name(
+                  id=rec_result
+                  ctx=Load
+                )
+            )
+          ]
+          orelse=[
+            Return(
+              value=
+                Constant(
+                  value=0
+                  kind=None
+                )
+            )
+          ]
+        )
+      ]
+      decorators=[]
+      returns=None
+    )
+  ]
+)
+
+=== IR ===
+Function factorial(n):
+  Local vars: ['n']
+  factorial_entry:
+    load n -> %t0
+    const 1 -> %t1
+    compare <=, %t0, %t1 -> %t1
+    branch %t1, if_then_0, if_else_2
+  if_then_0:
+    const 1 -> %t1
+    ret %t1
+    jump if_merge_1
+  if_merge_1:
+    ret 
+  if_else_2:
+    load n -> %t4
+    load n -> %t5
+    const 1 -> %t1
+    binop -, %t5, %t1 -> %t7
+    call factorial, %t7 -> %t8
+    binop *, %t4, %t8 -> %t9
+    ret %t9
+    jump if_merge_1
+Function iterative_factorial(n):
+  Local vars: ['n', 'result']
+  iterative_factorial_entry:
+    const 1 -> %t1
+    store %t1, result
+  while_cond_3:
+    load n -> %t11
+    const 1 -> %t1
+    compare >, %t11, %t1 -> %t12
+    branch %t12, while_body_4, while_exit_5
+  while_body_4:
+    load result -> %t14
+    load n -> %t15
+    binop *, %t14, %t15 -> %t16
+    store %t16, result
+    load n -> %t17
+    const 1 -> %t1
+    binop -, %t17, %t1 -> %t19
+    store %t19, n
+    jump while_cond_3
+  while_exit_5:
+    load result -> %t20
+    ret %t20
+Function main():
+  Local vars: ['x', 'rec_result', 'iter_result']
+  main_entry:
+    const 5 -> %t5
+    store %t5, x
+    load x -> %t22
+    call factorial, %t22 -> %t23
+    store %t23, rec_result
+    load x -> %t24
+    call iterative_factorial, %t24 -> %t25
+    store %t25, iter_result
+    load rec_result -> %t26
+    load iter_result -> %t28
+    compare ==, %t26, %t28 -> %t27
+    branch %t27, if_then_6, if_else_8
+  if_then_6:
+    load rec_result -> %t29
+    ret %t29
+    jump if_merge_7
+  if_merge_7:
+    ret 
+  if_else_8:
+    const 0 -> %t0
+    ret %t0
+    jump if_merge_7
+
+.intel_syntax noprefix
+.global main
+.text
+
+factorial:
+    push rbp
+    mov rbp, rsp
+    sub rsp, 64
+    mov QWORD PTR [rbp-8], rdi
+    
+    factorial_entry:
+    mov rax, QWORD PTR [rbp-8]
+    mov QWORD PTR [rbp-48], rax
+    mov rax, 1
+    mov QWORD PTR [rbp-16], rax
+    mov rax, QWORD PTR [rbp-48]
+    mov rcx, QWORD PTR [rbp-16]
+    cmp rax, rcx
+    setle al
+    movzx rax, al
+    mov QWORD PTR [rbp-16], rax
+    mov rax, QWORD PTR [rbp-16]
+    cmp rax, 0
+    je if_else_2
+    jmp if_then_0
+    
+    if_then_0:
+    mov rax, 1
+    mov QWORD PTR [rbp-16], rax
+    mov rax, QWORD PTR [rbp-16]
+    leave
+    ret
+    jmp if_merge_1
+    
+    if_merge_1:
+    xor rax, rax
+    leave
+    ret
+    
+    if_else_2:
+    mov rax, QWORD PTR [rbp-8]
+    mov QWORD PTR [rbp-56], rax
+    mov rax, QWORD PTR [rbp-8]
+    mov QWORD PTR [rbp-32], rax
+    mov rax, 1
+    mov QWORD PTR [rbp-16], rax
+    mov rax, QWORD PTR [rbp-32]
+    mov rcx, QWORD PTR [rbp-16]
+    sub rax, rcx
+    mov QWORD PTR [rbp-24], rax
+    mov rdi, QWORD PTR [rbp-24]
+    sub rsp, 8
+    call factorial
+    mov QWORD PTR [rbp-64], rax
+    mov rax, QWORD PTR [rbp-56]
+    mov rcx, QWORD PTR [rbp-64]
+    imul rax, rcx
+    mov QWORD PTR [rbp-40], rax
+    mov rax, QWORD PTR [rbp-40]
+    leave
+    ret
+    jmp if_merge_1
+
+iterative_factorial:
+    push rbp
+    mov rbp, rsp
+    sub rsp, 48
+    mov QWORD PTR [rbp-16], rdi
+    
+    iterative_factorial_entry:
+    mov rax, 1
+    mov QWORD PTR [rbp-32], rax
+    mov rax, QWORD PTR [rbp-32]
+    mov QWORD PTR [rbp-8], rax
+    
+    while_cond_3:
+    mov rax, QWORD PTR [rbp-16]
+    mov QWORD PTR [rbp-48], rax
+    mov rax, 1
+    mov QWORD PTR [rbp-32], rax
+    mov rax, QWORD PTR [rbp-48]
+    mov rcx, QWORD PTR [rbp-32]
+    cmp rax, rcx
+    setg al
+    movzx rax, al
+    mov QWORD PTR [rbp-40], rax
+    mov rax, QWORD PTR [rbp-40]
+    cmp rax, 0
+    je while_exit_5
+    jmp while_body_4
+    
+    while_body_4:
+    mov rax, 16
+    mov QWORD PTR [rbp-8], rax
+    mov rax, 1
+    mov QWORD PTR [rbp-32], rax
+    mov rax, 19
+    mov QWORD PTR [rbp-16], rax
+    jmp while_cond_3
+    
+    while_exit_5:
+    mov rax, QWORD PTR [rbp-8]
+    mov QWORD PTR [rbp-24], rax
+    mov rax, QWORD PTR [rbp-24]
+    leave
+    ret
+
+main:
+    push rbp
+    mov rbp, rsp
+    sub rsp, 64
+    
+    main_entry:
+    mov rax, 5
+    mov QWORD PTR [rbp-8], rax
+    mov rax, 23
+    mov QWORD PTR [rbp-16], rax
+    mov rax, 25
+    mov QWORD PTR [rbp-24], rax
+    mov rax, QWORD PTR [rbp-16]
+    mov QWORD PTR [rbp-48], rax
+    mov rax, QWORD PTR [rbp-24]
+    mov QWORD PTR [rbp-40], rax
+    mov rax, QWORD PTR [rbp-48]
+    mov rcx, QWORD PTR [rbp-40]
+    cmp rax, rcx
+    sete al
+    movzx rax, al
+    mov QWORD PTR [rbp-56], rax
+    mov rax, QWORD PTR [rbp-56]
+    cmp rax, 0
+    je if_else_8
+    jmp if_then_6
+    
+    if_then_6:
+    mov rax, QWORD PTR [rbp-16]
+    mov QWORD PTR [rbp-64], rax
+    mov rax, QWORD PTR [rbp-64]
+    leave
+    ret
+    jmp if_merge_7
+    
+    if_merge_7:
+    xor rax, rax
+    leave
+    ret
+    
+    if_else_8:
+    mov rax, 0
+    mov QWORD PTR [rbp-32], rax
+    mov rax, QWORD PTR [rbp-32]
+    leave
+    ret
+    jmp if_merge_7
